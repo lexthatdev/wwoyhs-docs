@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Privacy Policy</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #000;
+    color: #fff;
+    line-height: 1.7;
+}
+
+/* background */
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: 0;
+
+    background-image: url('background_inv.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* layout */
+.container {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    margin: 80px auto;
+    padding: 20px;
+    animation: rise 1s ease forwards;
+}
+
+@keyframes rise {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+h1 {
+    font-family: 'Finger Paint';
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 30px;
+    font-weight: 500;
+}
+
+p {
+    opacity: 0.85;
+}
+
+/* links */
+a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0%;
+    height: 1px;
+    background: #fff;
+    transition: width 0.3s;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+.separator {
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(
+        to right,
+        rgb(255, 255, 255),
+        transparent
+    );
+    margin: 20px 0 30px 0;
+    opacity: 0.6;
+}
+
+/* discord mention */
+.mention {
+    background: rgba(88, 101, 242, 0.2);
+    color: #5865f2;
+    padding: 2px 6px;
+    border-radius: 6px;
+    font-weight: 500;
+}
+</style>
+</head>
+
+<body>
+<div class="bg"></div>
+
+<div class="container">
+    <h1>privacy policy</h1>
+    <div class="separator"></div>
+    <p>
+        updated May 2nd, 2026<br>
+        this bot is developed by <span class="mention">@lex</span> and is designed with minimal data usage in mind.
+    </p>
+
+    <h2>1. data collection</h2>
+    <p>This bot only processes data necessary for its features, such as user IDs, messages, or interactions within the server.</p>
+
+    <h2>2. data storage</h2>
+    <p>Some data may be stored temporarily (e.g., moderation actions or verification processes). This data is not stored longer than necessary.</p>
+
+    <h2>3. data usage</h2>
+    <p>Data is used strictly to provide bot functionality and is never sold or shared with third parties.</p>
+
+    <h2>4. security</h2>
+    <p>Reasonable measures are taken to protect stored data, but no system can be guaranteed 100% secure.</p>
+
+    <h2>5. user rights</h2>
+    <p>You may request data removal by contacting the developer.</p>
+
+    <h2>6. changes</h2>
+    <p>This policy may be updated at any time to reflect changes in functionality.</p>
+
+    <br><br>
+    <a href="index.html">← back</a>
+</div>
+</body>
+</html>
