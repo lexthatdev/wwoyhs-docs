@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+<title>terms of service</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #000;
+    color: #fff;
+    line-height: 1.7;
+}
+
+/* background */
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: 0;
+
+    background-image: url('../background_inv.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* layout */
+.container {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    margin: 80px auto;
+    padding: 20px;
+    animation: rise 1s ease forwards;
+}
+
+@keyframes rise {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+h1 {
+    font-family: 'Finger Paint';
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 30px;
+    font-weight: 500;
+}
+
+p {
+    opacity: 0.85;
+}
+
+/* links */
+a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0%;
+    height: 1px;
+    background: #fff;
+    transition: width 0.3s;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+.separator {
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(
+        to right,
+        rgb(255, 255, 255),
+        transparent
+    );
+    margin: 20px 0 30px 0;
+    opacity: 0.6;
+}
+
+/* discord mention */
+.mention {
+    background: rgba(88, 101, 242, 0.2);
+    color: #5865f2;
+    padding: 2px 6px;
+    border-radius: 6px;
+    font-weight: 500;
+}
+</style>
+</head>
+
+<body>
+<div class="bg"></div>
+
+<div class="container">
+    <h1>terms of service</h1>
+    <div class="separator"></div>
+    <p>
+        updated May 2nd, 2026<br>
+        this bot is privately developed and maintained by <span class="mention">@lex</span>
+    </p>
+
+    <h2>1. scope</h2>
+    <p>This bot is designed for use within a <a href="https://discord.com/invite/DdwyAYSzvU">specific Discord server</a> and is not intended for general public use. Functionality, commands, and behaviour may rely on server-specific configurations and may not operate correctly outside of <a href="https://discord.com/invite/DdwyAYSzvU">this environment</a>.</p>
+
+    <h2>2. usage</h2>
+    <p>By interacting with the bot, you agree to use it respectfully and in accordance with the rules of the Discord server in which it operates. Abuse of the bot, including spam, exploitation of features, or attempts to disrupt its operation, may result in temporary shutdown of the bot or restricted access.</p>
+
+    <h2>3. permissions & moderation</h2>
+    <p>Certain features of the bot may interact with moderation systems, roles, or user-generated content. By using the bot, you acknowledge that actions performed through it (such as role assignment or verification processes) are subject to server moderation, require specific role IDs and have no guaranteed functionality.</p>
+
+    <h2>4. availability</h2>
+    <p>The bot is provided "as is" without guarantees of uptime, reliability, or availability. The bot may be offline, restarted, or removed at any time without prior notice.</p>
+
+    <h2>5. modifications</h2>
+    <p>Features, commands, and behaviour of the bot may be modified, added or removed at any time without prior notice. Continued use of the bot implies acceptance of these changes.</p>
+
+    <h2>6. limitations of liability</h2>
+    <p>The developer is not responsible for any misuse, data loss, disruption, or unintended consequences resulting from the use of the bot. The bot operates within the limitations of a specific guild on the Discord platform and also its external systems.</p>
+
+    <h2>7. termination of access</h2>
+    <p>Access to the bot may be restricted, limited, or permenantly removed at any time, with or without reason, particularly in cases of misuse or violation of server rules.</p>
+
+    <h2>8. contact</h2>
+    <p>For questions, concerns or issues relating to the bot, users may contact <a href="https://discord.com/users/626451631806087198">the developer</a> directly via Discord.</p>
+
+    <br><br>
+    <a href="../index.html">← back</a>
+</div>
+</body>
+</html>
